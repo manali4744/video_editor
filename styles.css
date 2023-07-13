@@ -1,0 +1,104 @@
+body {
+    background-color: #151519;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set the body height to fill the viewport */
+    margin: 0; /* Remove default margin */
+  }
+
+  .navbar {
+    height: 50px; /* Adjust the height as needed */
+    background-color: #151519; /* Set the background color to grey */
+  }
+
+  .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ffffff; /* White border around the container */
+    margin: 10px; /* Add margin for spacing */
+  }
+
+  .top-block {
+    flex: 3; /* Take up 2/3 of the available height */
+    background-color: #151519;
+    display: flex;
+    border-bottom: 1px solid #ffffff; /* White border at the bottom */
+  }
+
+  .left-part {
+    width: 30%; /* Take up 30% of the top-block width */
+    background-color: #36363C;
+    border-right: 1px solid #ffffff; /* White border at the right */
+    display: flex; /* Add display flex to left-part to align child divs */
+  }
+
+  .div1 {
+    width: calc(25% - 10px); /* Take up 1/4 of the width of left-part with 10px margin */
+    background-color: #777777;
+    margin: 5px; /* Add margin for spacing */
+  }
+
+  .div2 {
+    flex: 1; /* Take up 3/4 of the width of left-part */
+    background-color: #999999;
+    margin: 5px; /* Add margin for spacing */
+  }
+
+  .right-part {
+    width: 70%; /* Take up 70% of the top-block width */
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center; /* Center the video horizontally */
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-controls {
+  /* Add styles for the player controls */
+  margin-top: 10px; /* Add margin to separate from the video */
+  display: flex; /* Display the controls in a row */
+  justify-content: space-around; /* Center the controls horizontally */
+  align-items: center; 
+}
+.player-controls button {
+  /* Add styles for the player controls */
+  margin-top: 60px; /* Add margin to separate from the video */
+  margin-left: 30px;
+  display: flex; /* Display the controls in a row */
+  justify-content: space-around; /* Center the controls horizontally */
+  align-items: center; 
+}
+
+  .bottom-block {
+    flex: 1; /* Take up 1/4 of the available height */
+    background-color: #444654;
+    border-top: 1px solid #ffffff; /* White border at the top */
+  }
+
+  .right-part video {
+    max-width: 70%;
+    max-height: 70%;
+  }
+
+  .button-container {
+    display: flex; /* Use flexbox to display buttons in a row */
+    justify-content: center; /* Distribute space evenly between buttons */
+    align-items: center; /* Center buttons vertically */
+    margin: 30px;
+  }
+
+#myVideo {
+transition: transform 0.3s ease;
+}
+
+#myVideo.flip-horizontal {
+    transform: scaleX(-1);
+}
+  
+#myVideo.flip-vertical {
+transform: scaleY(-1);
+}
+  
+  
