@@ -56,4 +56,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         video.style.transform = flipTransform + "rotate(" + rotationAngle + "deg)";
       }
-    });
+});
